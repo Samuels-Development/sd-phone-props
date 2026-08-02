@@ -33,6 +33,14 @@ Modern flat-edge chassis at real-world scale, 78.0 x 163.4 x 8.75 mm (13.5 mm ov
 
 Collision is a box bound (`PLASTIC_HIGH_DENSITY`) embedded in the drawable, so the props work both attached to a ped and spawned as world objects.
 
+Local axes are X across the screen, Y through it and Z up it, origin at the geometry centre, with the screen facing `-Y`:
+
+```
+sd_phone_<colour>   min(-0.0392, -0.0068, -0.0817)  max(0.0392, 0.0068, 0.0817)
+```
+
+That is the convention GTA's own hand props use, so these weld into the `cellphone@` texting grip on `SKEL_R_Hand` (bone 28422) at a zero offset and rotation, with no per-script transform to work out.
+
 ## Credits
 
 Phone model by **Samuels Development**.
