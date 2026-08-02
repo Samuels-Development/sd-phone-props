@@ -12,6 +12,12 @@
 
 Streams the `sd_phone_<colour>` drawables (black, blue, green, orange, pink, purple, red, yellow) that sd-phone attaches to the player's hand while the phone is out. The prop colour matches the phone item the player used.
 
+## Preview
+
+<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/f39c874c-f52d-430b-94af-41a45ada560a" />
+
+<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/6f4998d2-5c7b-4a50-9af8-5b28053d2709" />
+
 ## Installation
 
 ```cfg
