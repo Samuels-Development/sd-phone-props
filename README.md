@@ -4,6 +4,10 @@
 
 **Streamed in-hand phone props for [sd-phone](https://github.com/Samuels-Development/sd-phone), one model per frame colour.**
 
+### This branch is for GTA V LEGACY
+
+[![Enhanced build](https://img.shields.io/badge/On%20GTA%20V%20Enhanced%3F-get%20the%20enhanced%20branch-9EEADD?style=for-the-badge)](https://github.com/Samuels-Development/sd-phone-props/tree/enhanced)
+
 [**sd-phone**](https://github.com/Samuels-Development/sd-phone) · [**Documentation**](https://docs.samueldev.shop/resources/phone/) · [**Discord**](https://discord.gg/FzPehMQaBQ)
 
 </div>
@@ -11,6 +15,17 @@
 ---
 
 Streams the `sd_phone_<colour>` drawables (black, blue, green, orange, pink, purple, red, yellow) that sd-phone attaches to the player's hand while the phone is out. The prop colour matches the phone item the player used.
+
+## Which branch do I want
+
+| Branch | Game build |
+|---|---|
+| `main` (you are here) | GTA V **Legacy** |
+| [`enhanced`](https://github.com/Samuels-Development/sd-phone-props/tree/enhanced) | GTA V **Enhanced** |
+
+The two carry the same models. Only the asset format differs: the drawables and the `.ytyp` on the `enhanced` branch have been run through CFX's Alchemist, which rewrites them into the format the Enhanced build loads. Everything else, the resource name, the manifest, the model names and the dimensions below, is identical, so sd-phone needs no change either way.
+
+Loading the wrong branch for your build is the usual cause of an invisible or malformed prop.
 
 ## Preview
 
