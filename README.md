@@ -26,8 +26,10 @@ Eight colours throughout: black, blue, green, orange, pink, purple, red and yell
 
 <img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/6f4998d2-5c7b-4a50-9af8-5b28053d2709" />
 
-<img width="1920" height="1280" alt="fold-open-back" src="https://github.com/user-attachments/assets/fd46d42e-678b-46f6-adb1-d5b40d386470" />
-<img width="1920" height="1280" alt="fold-open-front" src="https://github.com/user-attachments/assets/d989ab7a-e680-4138-aa2a-f96cf400e38d" />
+<img width="1920" height="1280" alt="fold-open-back" src="https://github.com/user-attachments/assets/54e30a25-21d1-436b-8021-3c534f3f6cd6" />
+
+<img width="1920" height="1280" alt="fold-open-front" src="https://github.com/user-attachments/assets/b495a8a0-452b-40e8-8ce3-06501cdcce6b" />
+
 
 
 ## Installation
