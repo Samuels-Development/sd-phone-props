@@ -26,12 +26,6 @@ Eight colours throughout: black, blue, green, orange, pink, purple, red and yell
 
 <img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/6f4998d2-5c7b-4a50-9af8-5b28053d2709" />
 
-The foldable, unfolded:
-
-<img width="1920" height="1280" alt="Unfolded foldable phones, screen side" src="images/fold-open-front.png" />
-
-<img width="1920" height="1280" alt="Unfolded foldable phones, back" src="images/fold-open-back.png" />
-
 ## Installation
 
 ```cfg
