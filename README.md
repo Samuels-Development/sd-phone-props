@@ -2,7 +2,7 @@
 
 # sd-phone-props
 
-**Streamed in-hand phone props for [sd-phone](https://github.com/Samuels-Development/sd-phone): two phone designs, each plain and foldable, in 41 colours and finishes, with cases and trims to dress them.**
+**Streamed in-hand phone props for [sd-phone](https://github.com/Samuels-Development/sd-phone): two phone designs with a choice of three logos, each plain and foldable, in 41 colours and finishes, with cases and trims to dress them.**
 
 [**sd-phone**](https://github.com/Samuels-Development/sd-phone) · [**Documentation**](https://docs.samueldev.shop/resources/phone/) · [**Discord**](https://discord.gg/FzPehMQaBQ)
 
@@ -19,7 +19,15 @@ Streams the drawables that sd-phone attaches to the player's hand while the phon
 | Foldable, open | `sd_phone_fold_<colour>_open` | `Foldable = true` and the hinge is open |
 | Live screen | `sd_phone_dui_<colour>`, `sd_phone_dui` | `PropScreen.Enabled = true`: the phone UI is drawn on the prop's own screen |
 
-Every set also exists with the iFruit logo in place of the SD one, under `sd_ifruit_` (`sd_ifruit_<colour>`, `sd_ifruit_fold_<colour>` and so on).
+### Three logos
+
+Every set exists with each of three marks on its back. The name starts with a different stem and is otherwise the same (`sd_ifruit_<colour>`, `sd_generic_fold_<colour>_open`, `sd_generic_dui_<colour>` and so on):
+
+| Logo | Classic stem | Slate stem |
+|---|---|---|
+| SD | `sd_phone` | `sd_slate` |
+| iFruit | `sd_ifruit` | `sd_ifruit_slate` |
+| Plain ring, nobody's brand | `sd_generic` | `sd_generic_slate` |
 
 ### Two designs
 
@@ -32,9 +40,9 @@ The models above are the **classic** design: flat brushed rails, a raised camera
 | Foldable, open | `sd_slate_fold_<colour>_open` |
 | Live screen | `sd_slate_dui_<colour>`, `sd_slate_dui` |
 
-Slate has the SD logo, comes in the same 41 colours, and is exactly the size of the classic phone with the cameras inside the same footprint, so every case and every trim position fits both. Its screens (`sd_slate_screen`, `sd_slate_fold_cover`, `sd_slate_fold_screen` in the shared dictionary) are the same pictures with the pill painted out.
+With another logo the stem changes as in the table above (`sd_ifruit_slate_<colour>`, `sd_generic_slate_fold_<colour>`). Slate comes in the same 41 colours and is exactly the size of the classic phone with the cameras inside the same footprint, so every case and every trim position fits both. Its screens (`sd_slate_screen`, `sd_slate_fold_cover`, `sd_slate_fold_screen` in the shared dictionary) are the same pictures with the pill painted out.
 
-With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each player picks the design of their own phone in the Cases app's Phone tab. To make Slate the only design instead, point the classic names at it: `PropPrefix = 'sd_slate_'`, `FoldPropPrefix = 'sd_slate_fold_'`, `PropScreen.Model = 'sd_slate_dui'`.
+With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each player picks the design and the logo of their own phone in the Cases app's Phone tab; `Looks.Models` lists which designs and logos are on offer, so removing a line takes that choice out of the app. To make Slate the only design instead, point the classic names at it: `PropPrefix = 'sd_slate_'`, `FoldPropPrefix = 'sd_slate_fold_'`, `PropScreen.Model = 'sd_slate_dui'`.
 
 ## Preview
 
@@ -51,6 +59,8 @@ With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each pla
 <img width="1920" alt="The Slate design: its back with three lenses straight off the glass, and its screen with a punch-hole camera" src="https://fivem.samueldev.shop/phone-props/readme/large_slate.jpg" />
 
 <img width="1920" alt="The Slate foldable shut, open from behind, and its inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_slate_fold.jpg" />
+
+<img width="1920" alt="The SD, iFruit and plain ring logos on the classic and the Slate design" src="https://fivem.samueldev.shop/phone-props/readme/large_logos.jpg" />
 
 <img width="1920" alt="Trims on both designs: coloured lens rings, camera surround and buttons" src="https://fivem.samueldev.shop/phone-props/readme/large_trims.jpg" />
 
@@ -73,9 +83,9 @@ ensure sd-phone-props
 ensure sd-phone
 ```
 
-sd-phone resolves the prop names by itself; without this resource the phone still works, players just hold nothing visible. Each colour is one phone item, `phone_<colour>`, listed in sd-phone's `configs/phone.lua`. Ready-made 100 x 100 item icons for both logos are in `extras/item_icons`.
+sd-phone resolves the prop names by itself; without this resource the phone still works, players just hold nothing visible. Each colour is one phone item, `phone_<colour>`, listed in sd-phone's `configs/phone.lua`. Ready-made 100 x 100 item icons for the SD and iFruit logos are in `extras/item_icons`.
 
-To hand out iFruit phones instead, set these in sd-phone's `configs/phone.lua`:
+A player who has not picked a logo holds the SD one. To make that iFruit instead (or the plain ring, with `sd_generic`), set these in sd-phone's `configs/phone.lua`:
 
 ```lua
 PropPrefix     = 'sd_ifruit_',
@@ -105,9 +115,9 @@ A leather-case colour is the same phone inside a case that wraps the sides and b
 |---|---|---|
 | Body, frame, buttons, lenses, case | `normal_spec.sps` | `sd_phone_<colour>_diffuse` 512² BC1, embedded; `sd_phone_normal`, `sd_phone_spec` shared |
 | Screen | `emissive.sps` | `sd_phone_screen`, `sd_phone_fold_cover` 1024 x 2048, `sd_phone_fold_screen` 2048², shared |
-| Logo, ports, grilles, screws, antenna lines | `decal.sps` | `sd_phone_details` / `sd_ifruit_details` 1024² BC3, shared |
+| Logo, ports, grilles, screws, antenna lines | `decal.sps` | `sd_phone_details` / `sd_ifruit_details` / `sd_generic_details` 1024² BC3, shared |
 
-Only the colour atlas is embedded in each drawable. Everything else lives in `stream/sd_phone_shared.ytd`, which every archetype names as its texture dictionary, so a texture is changed once for all models. The live-screen models use `stream/sd_phone_dui.ytd` instead, so sd-phone can replace `sd_phone_screen` there without touching the phones other players hold.
+The first three sets (SD on both designs, iFruit on the classic one) carry their colour atlas inside each drawable; the three added later (the plain ring on both, iFruit on Slate) take it from the dictionary, which keeps those models about a fifth smaller. Everything else lives in `stream/sd_phone_shared.ytd`, which every archetype names as its texture dictionary, so a texture is changed once for all models. The live-screen models use `stream/sd_phone_dui.ytd` instead, so sd-phone can replace `sd_phone_screen` there without touching the phones other players hold.
 
 Each drawable carries a small cool-white light just in front of the screen, so a phone in use lights the hand and face at night. Collision is a box bound (`PLASTIC_HIGH_DENSITY`) embedded in the drawable, so the props work both attached to a ped and spawned as world objects.
 
