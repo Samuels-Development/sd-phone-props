@@ -2,7 +2,7 @@
 
 # sd-phone-props
 
-**Streamed in-hand phone props for [sd-phone](https://github.com/Samuels-Development/sd-phone): a plain and a foldable chassis in 41 colours and finishes, with an SD or an iFruit logo.**
+**Streamed in-hand phone props for [sd-phone](https://github.com/Samuels-Development/sd-phone): two phone designs, each plain and foldable, in 41 colours and finishes, with cases and trims to dress them.**
 
 [**sd-phone**](https://github.com/Samuels-Development/sd-phone) · [**Documentation**](https://docs.samueldev.shop/resources/phone/) · [**Discord**](https://discord.gg/FzPehMQaBQ)
 
@@ -21,6 +21,21 @@ Streams the drawables that sd-phone attaches to the player's hand while the phon
 
 Every set also exists with the iFruit logo in place of the SD one, under `sd_ifruit_` (`sd_ifruit_<colour>`, `sd_ifruit_fold_<colour>` and so on).
 
+### Two designs
+
+The models above are the **classic** design: flat brushed rails, a raised camera plateau, a pill in the display. Every set also exists as **Slate**, a second design for anyone who would rather not carry that look: rounded polished rails, three lenses standing straight off the back glass, a punch-hole camera, and both buttons on one side.
+
+| Set | Slate model |
+|---|---|
+| Plain | `sd_slate_<colour>` |
+| Foldable, shut | `sd_slate_fold_<colour>` |
+| Foldable, open | `sd_slate_fold_<colour>_open` |
+| Live screen | `sd_slate_dui_<colour>`, `sd_slate_dui` |
+
+Slate has the SD logo, comes in the same 41 colours, and is exactly the size of the classic phone with the cameras inside the same footprint, so every case and every trim position fits both. Its screens (`sd_slate_screen`, `sd_slate_fold_cover`, `sd_slate_fold_screen` in the shared dictionary) are the same pictures with the pill painted out.
+
+With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each player picks the design of their own phone in the Cases app's Phone tab. To make Slate the only design instead, point the classic names at it: `PropPrefix = 'sd_slate_'`, `FoldPropPrefix = 'sd_slate_fold_'`, `PropScreen.Model = 'sd_slate_dui'`.
+
 ## Preview
 
 **[Turn every model round in the 3D viewer](https://fivem.samueldev.shop/phone/props)**: pick a logo, a body and a colour, build a case on it and see the model names it is made of.
@@ -32,6 +47,12 @@ Every set also exists with the iFruit logo in place of the SD one, under `sd_ifr
 <img width="1920" alt="The foldable open: its back, and the inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_open.jpg" />
 
 <img width="1920" alt="The iFruit logo on the plain phone and on the open foldable" src="https://fivem.samueldev.shop/phone-props/readme/large_ifruit.jpg" />
+
+<img width="1920" alt="The Slate design: its back with three lenses straight off the glass, and its screen with a punch-hole camera" src="https://fivem.samueldev.shop/phone-props/readme/large_slate.jpg" />
+
+<img width="1920" alt="The Slate foldable shut, open from behind, and its inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_slate_fold.jpg" />
+
+<img width="1920" alt="Trims on both designs: coloured lens rings, camera surround and buttons" src="https://fivem.samueldev.shop/phone-props/readme/large_trims.jpg" />
 
 <img width="1920" alt="The four finishes: frosted glass, polished glass, two-tone with a gold frame, leather case" src="https://fivem.samueldev.shop/phone-props/readme/large_finishes.jpg" />
 
@@ -99,6 +120,10 @@ sd_phone_fold_<colour>_open   min(-0.0789, +0.0023, -0.0817)  max(0.0784, 0.0116
 ```
 
 That is the convention GTA's own hand props use, so these weld into the `cellphone@` texting grip on `SKEL_R_Hand` (bone 28422) at a zero offset and rotation. The open body is twice as wide, so sd-phone offsets it in the hand; that offset lives in `configs/phone.lua` (`FoldOpenPropOffset`). The plain phone's screen is 73.4 x 158.4 mm centred on `(0, -0.00186, 0)`, which is what `PropScreen.ScreenCentre` and `ScreenSize` describe.
+
+## Trims
+
+Small coloured parts fitted to the phone itself, with or without a case: `sd_trim_<trim>_<look>_<body>`, where the trim is `rings` (a ring round each lens), `bezel` (a band round the cameras) or `buttons` (caps over the side buttons), the look is `classic` or `slate`, and the body is `plain`, `shut` or `open`. That is 18 models. They are attached at the phone's own origin and tinted from the same 64-row palette as the cases, so a trim is any of the 64 colours, in anodised metal. A case covers the buttons; the lens rings and the camera surround show through its cut-out. Players choose them in the same Phone tab.
 
 ## Cases
 
