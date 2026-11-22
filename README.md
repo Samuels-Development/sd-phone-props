@@ -25,6 +25,20 @@ Every set also exists with the iFruit logo in place of the SD one, under `sd_ifr
 
 **[Turn every model round in the 3D viewer](https://fivem.samueldev.shop/phone/props)**: pick a logo, a body and a colour, build a case on it and see the model names it is made of.
 
+<img width="1920" alt="The plain phone from behind and with its screen on" src="https://fivem.samueldev.shop/phone-props/readme/large_phone.jpg" />
+
+<img width="1920" alt="The foldable shut: its back with the spine, and the cover screen" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_shut.jpg" />
+
+<img width="1920" alt="The foldable open: its back, and the inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_open.jpg" />
+
+<img width="1920" alt="The iFruit logo on the plain phone and on the open foldable" src="https://fivem.samueldev.shop/phone-props/readme/large_ifruit.jpg" />
+
+<img width="1920" alt="The four finishes: frosted glass, polished glass, two-tone with a gold frame, leather case" src="https://fivem.samueldev.shop/phone-props/readme/large_finishes.jpg" />
+
+<img width="1920" alt="Three phone cases close up, with patterns, accessories, stickers and charms" src="https://fivem.samueldev.shop/phone-props/readme/large_cases.jpg" />
+
+### Everything at a glance
+
 <img width="1920" alt="All 41 phone colours and finishes from behind" src="https://fivem.samueldev.shop/phone-props/readme/colours.jpg" />
 
 <img width="1920" alt="The plain phone, the foldable shut and the foldable open, with the SD and the iFruit logo" src="https://fivem.samueldev.shop/phone-props/readme/bodies.jpg" />
