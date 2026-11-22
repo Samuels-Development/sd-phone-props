@@ -114,13 +114,14 @@ sd-phone's Cases app lets a player design a case, buy it and wear it on the phon
 | Brand sticker | `sd_case_stk_<brand>`: 32 of GTA's own companies, from sprunk and pisswasser to vomfeuer and zit | no |
 | Photo sticker | `sd_case_stk_photo_1` to `_6`: blank cards sd-phone fills with a player's own picture | no |
 
-Colour comes from a tint palette, not from separate models: `sd_case_pal` in `stream/sd_phone_cases.ytd` is 64 rows, one colour each, and `SetObjectTextureVariation(object, row)` picks the row for that one object. That is how 125 small models (about 1.6 MB) cover every colour of every part. The shell, pattern, accessory and charm each take their own row.
+Colour comes from a tint palette, not from separate models: `sd_case_pal` in `stream/sd_phone_cases.ytd` is 64 rows, one colour each, and `SetObjectTextureVariation(object, row)` picks the row for that one object. That is how 125 small models and one texture dictionary (about 5 MB together) cover every colour of every part. The shell, pattern, accessory and charm each take their own row.
 
 | Texture | What it is |
 |---|---|
 | `sd_case_pal` | 256 x 64 A8R8G8B8, the palette. Row order is a contract with sd-phone (`shared/casesdata.lua`): add colours at the end only |
-| `sd_case_d`, `sd_case_n`, `sd_case_s` | 512² whitened surfaces (smooth, gloss, rubber, metal, leather, fabric), their normals and shine |
-| `sd_case_pat` | 2048 x 1024 BC3, the sixteen patterns as grey value x alpha |
+| `sd_case_d`, `sd_case_n` | 2048² BC1, the whitened surfaces and their normals: pebbled leather, woven fabric, knurled rubber, satin, lacquer, brushed metal. Each is drawn at 5.8 px per mm and every part is mapped onto it at that scale, so the grain is the same size on a side wall as on the back |
+| `sd_case_s` | 1024² BC1, how shiny each point of those surfaces is |
+| `sd_case_pat` | 4096 x 2048 BC3, the sixteen patterns as grey value x alpha |
 | `sd_case_stk` | 1024² BC3, the icon sticker sheet. Glyphs are from [Lucide](https://lucide.dev) (ISC) |
 | `sd_case_brand` | 2048 x 1024 BC3, the brand stickers: each company's mark from the game's own stock-exchange site, on a badge |
 | `sd_case_photo_1` to `_6` | 64² placeholders, one per photo slot. sd-phone replaces each at runtime with an off-screen page showing a picture |
