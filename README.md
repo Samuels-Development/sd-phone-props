@@ -42,7 +42,7 @@ The models above are the **classic** design: flat brushed rails, a raised camera
 
 With another logo the stem changes as in the table above (`sd_ifruit_slate_<colour>`, `sd_generic_slate_fold_<colour>`). Slate comes in the same 41 colours and is exactly the size of the classic phone with the cameras inside the same footprint, so every case and every trim position fits both. Its screens (`sd_slate_screen`, `sd_slate_fold_cover`, `sd_slate_fold_screen` in the shared dictionary) are the same pictures with the pill painted out.
 
-With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each player picks the design and the logo of their own phone in the Cases app's Phone tab; `Looks.Models` lists which designs and logos are on offer, so removing a line takes that choice out of the app. To make Slate the only design instead, point the classic names at it: `PropPrefix = 'sd_slate_'`, `FoldPropPrefix = 'sd_slate_fold_'`, `PropScreen.Model = 'sd_slate_dui'`.
+With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each player picks the design and the logo of their own phone at a case store, on its Phone tab; `Looks.Designs` says which designs the server has (both, or only one, which everybody then holds) and `Looks.Models` which logos each comes with. To make Slate the only design instead, point the classic names at it: `PropPrefix = 'sd_slate_'`, `FoldPropPrefix = 'sd_slate_fold_'`, `PropScreen.Model = 'sd_slate_dui'`.
 
 ## Preview
 
@@ -133,11 +133,11 @@ That is the convention GTA's own hand props use, so these weld into the `cellpho
 
 ## Trims
 
-Small coloured parts fitted to the phone itself, with or without a case: `sd_trim_<trim>_<look>_<body>`, where the trim is `rings` (a ring round each lens), `bezel` (a band round the cameras) or `buttons` (caps over the side buttons), the look is `classic` or `slate`, and the body is `plain`, `shut` or `open`. That is 18 models. They are attached at the phone's own origin and tinted from the same 64-row palette as the cases, so a trim is any of the 64 colours, in anodised metal. A case covers the buttons; the lens rings and the camera surround show through its cut-out. Players choose them in the same Phone tab.
+Small coloured parts fitted to the phone itself, with or without a case: `sd_trim_<trim>_<look>_<body>`, where the trim is `rings` (a ring round each lens), `bezel` (a band round the cameras) or `buttons` (caps over the side buttons), the look is `classic` or `slate`, and the body is `plain`, `shut` or `open`. That is 18 models. They are attached at the phone's own origin and tinted from the same 64-row palette as the cases, so a trim is any of the 64 colours, in anodised metal. A case covers the buttons; the lens rings and the camera surround show through its cut-out. Players choose them on the same Phone tab.
 
 ## Cases
 
-sd-phone's Cases app lets a player design a case, buy it and wear it on the phone in their hand. A case is made of separate drawables that sd-phone attaches to the phone prop, so any case goes on any phone:
+sd-phone's case stores let a player design a case on their own phone in 3D and buy it as an item; using the item puts it on the phone in their hand. A case is made of separate drawables that sd-phone attaches to the phone prop, so any case goes on any phone:
 
 | Part | Models | Tinted |
 |---|---|---|
