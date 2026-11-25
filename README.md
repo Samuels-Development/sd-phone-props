@@ -48,33 +48,33 @@ With sd-phone's `Looks` setting on (`configs/phone.lua`, on by default) each pla
 
 **[Turn every model round in the 3D viewer](https://fivem.samueldev.shop/phone/props)**: pick a logo, a body and a colour, build a case on it and see the model names it is made of.
 
-<img width="1920" alt="The plain phone from behind and with its screen on" src="https://fivem.samueldev.shop/phone-props/readme/large_phone.jpg" />
+<img width="1920" alt="The plain phone from behind and with its screen on" src="https://fivem.samueldev.shop/phone-props/readme/large_phone.jpg?v=2" />
 
-<img width="1920" alt="The foldable shut: its back with the spine, and the cover screen" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_shut.jpg" />
+<img width="1920" alt="The foldable shut: its back with the spine, and the cover screen" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_shut.jpg?v=2" />
 
-<img width="1920" alt="The foldable open: its back, and the inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_open.jpg" />
+<img width="1920" alt="The foldable open: its back, and the inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_fold_open.jpg?v=2" />
 
-<img width="1920" alt="The iFruit logo on the plain phone and on the open foldable" src="https://fivem.samueldev.shop/phone-props/readme/large_ifruit.jpg" />
+<img width="1920" alt="The iFruit logo on the plain phone and on the open foldable" src="https://fivem.samueldev.shop/phone-props/readme/large_ifruit.jpg?v=2" />
 
-<img width="1920" alt="The Slate design: its back with three lenses straight off the glass, and its screen with a punch-hole camera" src="https://fivem.samueldev.shop/phone-props/readme/large_slate.jpg" />
+<img width="1920" alt="The Slate design: its back with three lenses straight off the glass, and its screen with a punch-hole camera" src="https://fivem.samueldev.shop/phone-props/readme/large_slate.jpg?v=2" />
 
-<img width="1920" alt="The Slate foldable shut, open from behind, and its inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_slate_fold.jpg" />
+<img width="1920" alt="The Slate foldable shut, open from behind, and its inner display" src="https://fivem.samueldev.shop/phone-props/readme/large_slate_fold.jpg?v=2" />
 
-<img width="1920" alt="The SD, iFruit and plain ring logos on the classic and the Slate design" src="https://fivem.samueldev.shop/phone-props/readme/large_logos.jpg" />
+<img width="1920" alt="The SD, iFruit and plain ring logos on the classic and the Slate design" src="https://fivem.samueldev.shop/phone-props/readme/large_logos.jpg?v=2" />
 
-<img width="1920" alt="Trims on both designs: coloured lens rings, camera surround and buttons" src="https://fivem.samueldev.shop/phone-props/readme/large_trims.jpg" />
+<img width="1920" alt="Trims on both designs: coloured lens rings, camera surround and buttons" src="https://fivem.samueldev.shop/phone-props/readme/large_trims.jpg?v=2" />
 
-<img width="1920" alt="The four finishes: frosted glass, polished glass, two-tone with a gold frame, leather case" src="https://fivem.samueldev.shop/phone-props/readme/large_finishes.jpg" />
+<img width="1920" alt="The four finishes: frosted glass, polished glass, two-tone with a gold frame, leather case" src="https://fivem.samueldev.shop/phone-props/readme/large_finishes.jpg?v=2" />
 
-<img width="1920" alt="Three phone cases close up, with patterns, accessories, stickers and charms" src="https://fivem.samueldev.shop/phone-props/readme/large_cases.jpg" />
+<img width="1920" alt="Three phone cases close up, with patterns, accessories, stickers and charms" src="https://fivem.samueldev.shop/phone-props/readme/large_cases.jpg?v=2" />
 
 ### Everything at a glance
 
-<img width="1920" alt="All 41 phone colours and finishes from behind" src="https://fivem.samueldev.shop/phone-props/readme/colours.jpg" />
+<img width="1920" alt="All 41 phone colours and finishes from behind" src="https://fivem.samueldev.shop/phone-props/readme/colours.jpg?v=2" />
 
-<img width="1920" alt="The plain phone, the foldable shut and the foldable open, with the SD and the iFruit logo" src="https://fivem.samueldev.shop/phone-props/readme/bodies.jpg" />
+<img width="1920" alt="The plain phone, the foldable shut and the foldable open, with the SD and the iFruit logo" src="https://fivem.samueldev.shop/phone-props/readme/bodies.jpg?v=2" />
 
-<img width="1920" alt="Ten phone cases: shells, patterns, accessories, charms and stickers" src="https://fivem.samueldev.shop/phone-props/readme/cases.jpg" />
+<img width="1920" alt="Ten phone cases: shells, patterns, accessories, charms and stickers" src="https://fivem.samueldev.shop/phone-props/readme/cases.jpg?v=2" />
 
 ## Installation
 
